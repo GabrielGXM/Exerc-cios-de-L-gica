@@ -1,0 +1,56 @@
+*{
+    background-color: rgb(44, 43, 43);
+}
+
+#Tela{
+    text-align: center;
+    margin-top: 200px;
+}
+
+#contador{
+    font-size: 100px;
+    color: white;
+    background-color: crimson;
+    padding: 30px 200px;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+#butoens{
+    margin-top: 20px;
+}
+
+#butMais{
+    margin-right:  5px;
+    margin-left:  5px;
+    padding: 16px 60px;
+    background-color: rgb(189, 3, 3);
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+#butMenos{
+    margin-right:  5px;
+    margin-left:  5px;
+    background-color: rgb(189, 4, 4);
+    padding: 16px 60px;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+#but_reset{
+    margin-right:  5px;
+    margin-left:  5px;
+    background-color: rgb(165, 2, 2);
+    padding: 20px 60px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+
+}

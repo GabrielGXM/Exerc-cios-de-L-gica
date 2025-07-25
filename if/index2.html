@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;"> digite um numero de 1 a 10</h1>
+    <script>
+
+        let num = parseInt(prompt("Digite um numero de 0 a 10:"))
+        
+        if(isNaN(num) == true){
+            alert("digite um numero válido")
+        }
+
+        if(num < 0 || num > 10){
+            alert("o numero digitado não está entre 0 e 10")
+        }else{
+             alert("o numero digitado foi " + num)
+        }
+    </script>
+</body>
+</html>

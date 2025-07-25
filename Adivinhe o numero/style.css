@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    background-color: rgb(37, 35, 35);
+    color: white;
+    margin-top: 270px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#numberInput{
+    padding: 20px 2px;
+    font-size: 40px;
+    text-align: center;
+    border:none ;
+    border-radius: 5px;
+}
+
+#check{
+    padding: 20px 80px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    background-color: crimson;
+    color: white;
+    border:none ;
+    border-radius: 5px;
+}
+
+#try{
+    padding: 20px 80px;
+    font-size: 25px;
+    background-color: crimson;
+    color:white;
+    border:none ;
+    border-radius: 5px;
+}
+
+
