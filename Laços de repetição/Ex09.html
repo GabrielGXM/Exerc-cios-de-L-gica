@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let timesEqual = 0
+
+        let dado1 = parseInt(Math.random() * 6 + 1)
+        let dado2 = parseInt(Math.random() * 6 + 1)
+        contador = 1
+
+        console.log(dado1 + " --- " + dado2)
+
+        if(dado1 === dado2){
+                timesEqual++
+            }
+
+        while(timesEqual != 10){
+
+            contador++
+            let dado1 = parseInt(Math.random() * 6 + 1)
+            let dado2 = parseInt(Math.random() * 6 + 1)
+
+            console.log(dado1 + " --- " + dado2)
+
+            if(dado1 === dado2){
+                timesEqual++
+            }
+        }
+
+        console.log("o Numero de vezes que os dados foram jogados foi " + contador + "!")
+        console.log("o quantidade de tentativas que resultaram em numeros iguais foi " + timesEqual + "!")
+    </script>
+</body>
+</html>

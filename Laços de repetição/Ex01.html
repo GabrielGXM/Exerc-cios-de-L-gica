@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <script>
+        let n = parseInt(prompt("Digite um numero para ver sua tabuada de 1 a 10"))
+        let contador = 0
+
+        if(isNaN(n) == true){
+            alert("digite um numero válido.")
+        }else{
+        while(contador < 11){
+            document.write(n + " X " + contador + " = " + n*contador + ". <br>")
+            contador++
+        }}
+        
+    </script>
+</body>
+</html>

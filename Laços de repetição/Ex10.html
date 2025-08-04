@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        qtdPar = 0
+
+        dado1 = parseInt(Math.random()*6 + 1)
+        dado2 = parseInt(Math.random()*6 + 1)
+        
+        console.log (dado1 +  " --- " + dado2)
+        contador = 1
+
+        if((dado1 + dado2) % 2 === 0){
+            qtdPar++
+        }
+
+        while(qtdPar != 10){
+            dado1 = parseInt(Math.random()*6 + 1)
+            dado2 = parseInt(Math.random()*6 + 1)
+
+            console.log (dado1 +  " --- " + dado2)
+            contador++
+
+             if((dado1 + dado2) % 2 === 0){
+            qtdPar++
+        }
+        }
+        console.log("o Numero de vezes que os dados foram jogados foi " + contador + "!")
+        console.log("o quantidade de tentativas que a soma dos 2 dados resultaram em numeros pares foi " + qtdPar + "!")
+
+    </script>
+</body>
+</html>
