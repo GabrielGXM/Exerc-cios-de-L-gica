@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <h1>Calculo de media</h1>
+
+     <div id="aluno_data">
+        
+     </div>
+    <script>
+
+        const aluno = [
+        {
+            nome : "Jobison",
+            notas :[9 , 4 , 3 , 8]
+        },
+        {
+            nome : "Jobert",
+            notas : [10, 6, 3, 2 ]
+        }, 
+        ]
+        
+        const content = document.getElementById("aluno_data")
+
+        for(let i=0; i<aluno.length;i++){
+            content.innerHTML += `<h2>${aluno[i].nome}<h2>`
+            for(let f = 0; f < aluno[i].notas.length; f++){
+                content.innerHTML += `<p>${aluno[i].notas[f]}<p>`
+            }
+        }
+    </script>
+</body>
+</html>

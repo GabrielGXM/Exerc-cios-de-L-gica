@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Arrays</h1>
+    <script>
+        let nome = prompt("Digite o seu nome:")
+
+        let nomes = ["gabriel","Emily", "Rose" , "chico", "Samuel"] // sintaxe literal
+
+        nomes[nomes.length] = nome
+        
+        for( i = 0; i<nomes.length;i++){
+            document.write(nomes[i] + "<br>")
+        }
+        document.write("<br>Essa lista possui " + nomes.length + " nomes!<br>")
+        document.write("<br>")
+
+        let idades = new Array(19,19,54,58,23) // sintaxe função construtora
+
+        for( i = 0; i<idades.length;i++){
+            document.write(idades[i] + "<br>")
+        }
+    </script>
+</body>
+</html>

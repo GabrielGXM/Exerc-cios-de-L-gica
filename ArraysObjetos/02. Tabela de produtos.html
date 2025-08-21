@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            border: 1px solid black;
+        }
+        
+        th{
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELA DE PRODUTOS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody id="TableContent">
+           
+        </tbody>
+    </table>
+    <script>
+        let produtos = [
+            {nome: "Teclado Mancer", preco:90 ,Qtd:13},
+            {nome: "RedDragon Cobra", preco:120 ,Qtd:32},
+            {nome: "B350m", preco:450 ,Qtd:57},
+            {nome: "RTX 3090", preco:3000 ,Qtd:42},
+            {nome: "Headset Luma", preco:200 ,Qtd:23}
+        ]
+
+        const tableContent = document.getElementById("TableContent")
+
+        for(i=0;i<produtos.length;i++){
+
+            tableContent.innerHTML += `<tr> <td>${produtos[i].nome}</td> <td>$${produtos[i].preco.toFixed(2)}</td> <td>${produtos[i].Qtd}</td> </tr>`
+        }
+    </script>
+</body>
+</html>

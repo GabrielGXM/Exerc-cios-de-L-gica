@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="Lista">
+        
+    </ul>
+
+    <script>
+
+        const pessoas = [
+            {nome: "Gabriel", email:"gabriel@gmail.com"},
+            {nome: "Emily", email:"Emily@gmail.com"},
+            {nome: "Samuel", email:"Samuel@gmail.com"},
+            {nome: "Francisco", email:"Francisco@gmail.com"},
+            {nome: "Roseane", email:"Roseane@gmail.com"},
+        ]
+
+        const lista = document.getElementById("Lista")
+
+        for(i=0;i<pessoas.length;i++){
+                    
+        lista.innerHTML += `<li>${pessoas[i].nome} - ${pessoas[i].email}</li>`
+
+        }
+    </script>
+</body>
+</html>

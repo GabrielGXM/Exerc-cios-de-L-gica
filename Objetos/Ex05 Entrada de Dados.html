@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const  pessoa = {
+            nome : String,
+            email: String
+        }
+
+       pessoa.nome = prompt("Digite seu Nome:")
+       pessoa.email = prompt("Digite seu Email:")
+
+       for(let prop in pessoa){
+        console.log(prop)
+        console.log(pessoa[prop])
+       }
+    </script>
+</body>
+</html>

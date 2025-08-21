@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <h1>Calculo de media</h1>
+
+     <div id="aluno_data">
+        
+     </div>
+    <script>
+
+        const aluno = {
+            nome : "Jobison",
+            notas :[9 , 4 , 3 , 8]
+        }; 
+        
+        let media = 0
+
+        for(let i = 0; i<aluno.notas.length ;i++){
+            media += aluno.notas[i]
+        }
+
+        media = media / 4
+
+        const data = document.getElementById("aluno_data")
+
+        data.innerHTML += `<h2>${aluno.nome}</h2><hr>
+                            <h3>Notas</h3>
+                            <ul id="notasList"></ul>`
+                            
+        const notasList = document.getElementById("notasList")
+
+        for(let i = 0;i<aluno.notas.length;i++){
+            notasList.innerHTML += `<li>${aluno.notas[i]}</li>`
+        }
+
+        let aprovado = (media >= 6) ? "APROVADO" : "REPROVADO"
+
+        
+        data.innerHTML += `<hr><p>Sua média é ${media}. ${aprovado}</p>`
+    </script>
+</body>
+</html>

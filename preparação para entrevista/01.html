@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    margin: 0;
+}
+
+        #container-pai{
+            display:  flex;
+            justify-content: center; /*Essa propriedade alinha os itens no eixo principal (que por padrão é o horizontal). center os coloca no meio.*/
+            align-items:center; /*align-items: center;: Essa propriedade alinha os itens no eixo secundário (o vertical). center os coloca no meio.*/
+
+            height: 100vh;
+            background-color: goldenrod;
+        }
+
+        #container-filho{
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            background-color: #191a16; /* Apenas para visualização */
+            color: white; /* Apenas para visualização */
+        }
+    </style>
+</head>
+<body>
+    <div id="container-pai">
+        <div id="container-filho">
+            <h1>Teste</h1>
+            <script>
+                const ehpar = (numero) => {
+                    numero % 2 === 0
+                }
+
+                const letraMaiuscula = (texto) => {
+                    if(!texto){return " "}
+                    return texto[0].toUpercase + texto.slice(1);
+                };
+            </script>
+        </div>
+    </div>
+</body>
+</html>

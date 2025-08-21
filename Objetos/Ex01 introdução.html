@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const produtos = {
+            name : String,
+            preco : Number,
+            quantidade : Number
+        }
+       produtos.name = prompt("Digite o nome do Produto:")
+
+       produtos.preco = parseFloat(prompt("Qual o preço do produto?"))
+
+       produtos.quantidade = parseInt(prompt("QUal a quantidade em estoque?"))
+
+        document.write(produtos.name + " custa R$" + produtos.preco + " e há " + produtos.quantidade +" no estoque!<br>")
+        document.write(`${produtos.name} custa R$${produtos.preco}e há ${produtos.quantidade} no estoque!`)
+
+    </script>
+</body>
+</html>

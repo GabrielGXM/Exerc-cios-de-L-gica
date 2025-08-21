@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const endereco = {
+
+            rua: "Rua das Tulias",
+            numero: 302
+         };
+
+        const pessoa = {
+            nome : "Joao",
+            sobrenome : "Fagundes",
+            endereco
+        }
+
+        console.log(`O endereço do Cliente ${pessoa.nome} ${pessoa.sobrenome} é ${pessoa.endereco.rua}, ${pessoa.endereco.numero} `)
+
+        for(let prop in pessoa){
+            
+            console.log(prop)
+            console.log(pessoa[prop])
+        }
+    </script>
+</body>
+</html>
